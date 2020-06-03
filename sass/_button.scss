@@ -1,0 +1,14 @@
+a{
+    padding: 1rem;
+    background-color: $button-color;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    width: 30vw;
+    font-weight: 700;
+    font-size: 16px;
+    color: $text-color;
+    text-decoration: none;
+    border-radius: 25rem;
+    box-shadow: 2px 4px 4px $button-shadow;
+}
