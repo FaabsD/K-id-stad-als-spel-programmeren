@@ -1,0 +1,102 @@
+@import url("https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap");
+a {
+  padding: 1rem;
+  background-color: #D52A2A;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+  width: 30vw;
+  font-weight: 700;
+  font-size: 16px;
+  color: #ffffff;
+  text-decoration: none;
+  border-radius: 25rem;
+  box-shadow: 2px 4px 4px rgba(0, 0, 0, 0.16);
+}
+
+.bottom {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 2.4rem;
+}
+
+@supports (-webkit-appearance: none) or (-moz-appearance: none) {
+  .touch-area .checker {
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    padding: 1rem;
+    width: 195px;
+    background-image: linear-gradient(to right, #1A5F2F, #00A1A2);
+    border-radius: 25em;
+  }
+  .touch-area .checker p {
+    color: #ffffff;
+    font-weight: 700;
+    font-size: 18px;
+  }
+  .touch-area .option {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+  }
+  .touch-area .option:checked ~ .checker {
+    border: 5px solid #D52A2A;
+  }
+}
+html {
+  height: 100%;
+  overflow: hidden;
+}
+
+body {
+  font-family: "Ubuntu", sans-serif;
+  height: 100%;
+  margin: 0;
+  text-align: center;
+}
+
+.image-holder img {
+  width: 100vw;
+  max-height: 190px;
+  object-fit: cover;
+}
+
+.modal-window {
+  position: fixed;
+  top: 35px;
+  left: 0;
+  bottom: 35px;
+  height: auto;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+}
+
+.close-button {
+  float: right;
+  font-size: 1.75em;
+  font-weight: bold;
+}
+
+.modal-content {
+  color: #1A5F2F;
+  background-color: #ffffff;
+  width: auto;
+  height: 100%;
+  padding: 0;
+  overflow: hidden;
+  margin-top: 35px;
+  /* animation: schuif-binnen 2s cubic-bezier(.86, .01, .18, 1.03) forwards; */
+}
+
+.modal-content img {
+  object-fit: cover;
+  height: auto;
+  width: 100%;
+  border: 0;
+  margin: 0 0.3em;
+  cursor: pointer;
+}
+
+/*# sourceMappingURL=questions.css.map */
