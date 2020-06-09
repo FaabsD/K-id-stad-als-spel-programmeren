@@ -4,12 +4,33 @@
 
 html
     height: 100%
+    overflow: hidden
 body
+    height: 100%
+    background-image: $background
+    background-repeat: no-repeat 
     font-family: $ubuntu
-header
+    margin: 0
+    text-align: center
+.title_bar
+    padding-top: .6rem
+    padding-left: .6rem
+    background-color: $white-opacity
     display: flex
     height: 131px
     width: 100%
     img
+        display: block
         height: 90%
-    
+        position: relative
+        bottom: 0
+h1
+    color: $title-green
+header
+    color: $text-color
+    padding-top: 1rem
+main
+    padding-left: 2rem
+    padding-right: 2rem
+    p
+        color: $text-color
