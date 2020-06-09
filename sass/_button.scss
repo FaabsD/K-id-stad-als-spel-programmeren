@@ -1,4 +1,4 @@
-a{
+a {
     padding: 1rem;
     background-color: $button-color;
     margin-left: auto;
@@ -13,10 +13,40 @@ a{
     box-shadow: 2px 4px 4px $button-shadow;
 }
 
-.bottom{
+.bottom {
     position: absolute;
     left: 0;
     right: 0;
     bottom: 2.4rem;
-    
+
+}
+
+// stijl voor de custom checkboxes
+
+@supports ((-webkit-appearance: none) or (-moz-appearance: none)) {
+    .touch-area {
+        .checker {
+            margin-left: auto;
+            margin-right: auto;
+            display: block;
+            padding: 1rem;
+            width: 195px;
+            background-image: $background-vertical;
+            border-radius: 25em;
+            p{
+                color: $text-color;
+                
+                font-weight: 700;
+                font-size: 18px;
+            }
+        }
+
+        .option {
+            -webkit-appearance: none;
+            -moz-appearance: none;
+            &:checked ~ .checker{
+                border: 5px solid $button-color;
+            }
+        }
+    }
 }
