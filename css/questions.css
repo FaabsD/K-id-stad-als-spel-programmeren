@@ -11,7 +11,8 @@ a {
   color: #ffffff;
   text-decoration: none;
   border-radius: 25rem;
-  box-shadow: 2px 4px 4px rgba(0, 0, 0, 0.16);
+  -webkit-box-shadow: 2px 4px 4px rgba(0, 0, 0, 0.16);
+          box-shadow: 2px 4px 4px rgba(0, 0, 0, 0.16);
 }
 
 .bottom {
@@ -26,8 +27,9 @@ a {
     margin-left: auto;
     margin-right: auto;
     display: block;
-    padding: 1rem;
+    padding: .8rem;
     width: 195px;
+    background-image: -webkit-gradient(linear, left top, right top, from(#1A5F2F), to(#00A1A2));
     background-image: linear-gradient(to right, #1A5F2F, #00A1A2);
     border-radius: 25em;
   }
@@ -41,9 +43,12 @@ a {
     -moz-appearance: none;
   }
   .touch-area .option:checked ~ .checker {
-    border: 5px solid #D52A2A;
+    border: 2.5px solid #D52A2A;
+    -webkit-box-shadow: inset 0 0 0px 2.5px #D52A2A;
+            box-shadow: inset 0 0 0px 2.5px #D52A2A;
   }
 }
+
 html {
   height: 100%;
   overflow: hidden;
@@ -56,10 +61,15 @@ body {
   text-align: center;
 }
 
+header {
+  color: #1A5F2F;
+}
+
 .image-holder img {
   width: 100vw;
   max-height: 190px;
-  object-fit: cover;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
 .modal-window {
@@ -69,8 +79,12 @@ body {
   bottom: 35px;
   height: auto;
   width: 100%;
-  align-items: center;
-  justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 .close-button {
@@ -91,12 +105,12 @@ body {
 }
 
 .modal-content img {
-  object-fit: cover;
+  -o-object-fit: cover;
+     object-fit: cover;
   height: auto;
   width: 100%;
   border: 0;
-  margin: 0 0.3em;
+  margin: 0 .3em;
   cursor: pointer;
 }
-
 /*# sourceMappingURL=questions.css.map */
