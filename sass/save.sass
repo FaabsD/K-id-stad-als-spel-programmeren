@@ -1,0 +1,46 @@
+@import "vars"
+@import "button"
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap')
+
+html
+    height: 100%
+    overflow: hidden
+body
+    height: 100%
+    background-image: $background
+    background-repeat: no-repeat 
+    font-family: $ubuntu
+    margin: 0
+    text-align: center
+.title_bar
+    padding-top: .6rem
+    padding-left: .6rem
+    background-color: $white-opacity
+    display: flex
+    height: 131px
+    width: 100%
+    img
+        display: block
+        height: 90%
+        position: relative
+        bottom: 0
+h1
+    color: $title-green
+header
+    color: $text-color
+    padding-top: 1rem
+main
+    padding-left: 2rem
+    padding-right: 2rem
+    p
+        color: $text-color
+    input[type="text"]
+        margin-top: 91px
+        color: $title-green
+        font-size: 20px
+        text-align: center
+        padding: 1rem
+        box-shadow: 2px 4px 4px $button-shadow
+        border: none
+        border-radius: 25em
+
