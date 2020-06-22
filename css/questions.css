@@ -76,6 +76,17 @@ header {
      object-fit: cover;
 }
 
+.logo-bottom {
+  position: absolute;
+  right: 10px;
+  bottom: 10px;
+}
+
+.logo-bottom img {
+  width: 55.79px;
+  height: 120.61px;
+}
+
 .modal-window {
   position: fixed;
   top: 35px;
