@@ -22,6 +22,10 @@ a {
   bottom: 2.4rem;
 }
 
+.Q-next {
+  margin-top: 29px;
+}
+
 @supports (-webkit-appearance: none) or (-moz-appearance: none) {
   .touch-area .checker {
     margin-left: auto;
