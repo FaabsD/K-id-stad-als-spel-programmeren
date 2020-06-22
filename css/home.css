@@ -11,7 +11,42 @@ a {
   color: #ffffff;
   text-decoration: none;
   border-radius: 25rem;
-  box-shadow: 2px 4px 4px rgba(0, 0, 0, 0.16);
+  -webkit-box-shadow: 2px 4px 4px rgba(0, 0, 0, 0.16);
+          box-shadow: 2px 4px 4px rgba(0, 0, 0, 0.16);
+}
+
+.bottom {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 2.4rem;
+}
+
+@supports (-webkit-appearance: none) or (-moz-appearance: none) {
+  .touch-area .checker {
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    padding: .8rem;
+    width: 195px;
+    background-image: -webkit-gradient(linear, left top, right top, from(#1A5F2F), to(#00A1A2));
+    background-image: linear-gradient(to right, #1A5F2F, #00A1A2);
+    border-radius: 25em;
+  }
+  .touch-area .checker p {
+    color: #ffffff;
+    font-weight: 700;
+    font-size: 18px;
+  }
+  .touch-area .option {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+  }
+  .touch-area .option:checked ~ .checker {
+    border: 2.5px solid #D52A2A;
+    -webkit-box-shadow: inset 0 0 0px 2.5px #D52A2A;
+            box-shadow: inset 0 0 0px 2.5px #D52A2A;
+  }
 }
 
 html {
@@ -21,6 +56,7 @@ html {
 
 body {
   height: 100%;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#1A5F2F), to(#00A1A2));
   background-image: linear-gradient(to bottom, #1A5F2F, #00A1A2);
   background-repeat: no-repeat;
   font-family: "Ubuntu", sans-serif;
@@ -47,9 +83,9 @@ p {
   margin-left: auto;
   margin-right: auto;
 }
+
 .logo_container img {
   min-height: 240px;
   width: 33vw;
 }
-
 /*# sourceMappingURL=home.css.map */
