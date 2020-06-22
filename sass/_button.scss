@@ -29,7 +29,7 @@ a {
             margin-left: auto;
             margin-right: auto;
             display: block;
-            padding: 1rem;
+            padding: .8rem;
             width: 195px;
             background-image: $background-vertical;
             border-radius: 25em;
@@ -45,7 +45,8 @@ a {
             -webkit-appearance: none;
             -moz-appearance: none;
             &:checked ~ .checker{
-                border: 5px solid $button-color;
+                border: 2.5px solid $button-color;
+                box-shadow: inset 0 0 0px 2.5px $button-color;
             }
         }
     }
