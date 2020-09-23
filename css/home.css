@@ -11,8 +11,7 @@ a {
   color: #ffffff;
   text-decoration: none;
   border-radius: 25rem;
-  -webkit-box-shadow: 2px 4px 4px rgba(0, 0, 0, 0.16);
-          box-shadow: 2px 4px 4px rgba(0, 0, 0, 0.16);
+  box-shadow: 2px 4px 4px rgba(0, 0, 0, 0.16);
 }
 
 .bottom {
@@ -31,9 +30,8 @@ a {
     margin-left: auto;
     margin-right: auto;
     display: block;
-    padding: .8rem;
+    padding: 0.8rem;
     width: 195px;
-    background-image: -webkit-gradient(linear, left top, right top, from(#1A5F2F), to(#00A1A2));
     background-image: linear-gradient(to right, #1A5F2F, #00A1A2);
     border-radius: 25em;
   }
@@ -48,11 +46,9 @@ a {
   }
   .touch-area .option:checked ~ .checker {
     border: 2.5px solid #D52A2A;
-    -webkit-box-shadow: inset 0 0 0px 2.5px #D52A2A;
-            box-shadow: inset 0 0 0px 2.5px #D52A2A;
+    box-shadow: inset 0 0 0px 2.5px #D52A2A;
   }
 }
-
 html {
   height: 100%;
   overflow: hidden;
@@ -60,7 +56,6 @@ html {
 
 body {
   height: 100%;
-  background-image: -webkit-gradient(linear, left top, left bottom, from(#1A5F2F), to(#00A1A2));
   background-image: linear-gradient(to bottom, #1A5F2F, #00A1A2);
   background-repeat: no-repeat;
   font-family: "Ubuntu", sans-serif;
@@ -70,6 +65,7 @@ body {
 }
 
 h1 {
+  margin-bottom: 5rem;
   color: #ffffff;
 }
 
@@ -82,14 +78,14 @@ p {
 }
 
 .logo_container {
-  margin-top: auto;
+  margin-top: 2rem;
   margin-bottom: auto;
   margin-left: auto;
   margin-right: auto;
 }
-
 .logo_container img {
   min-height: 240px;
   width: 33vw;
 }
+
 /*# sourceMappingURL=home.css.map */
