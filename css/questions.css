@@ -99,15 +99,19 @@ header {
   width: 100vw;
   align-items: center;
   justify-content: center;
+  border-radius: 2rem;
+  border: 2px solid #1A5F2F;
 }
 
 .close-button {
+  margin-right: 1rem;
   float: right;
-  font-size: 2em;
+  font-size: 2.5em;
   font-weight: bold;
 }
 
 .modal-content {
+  border-radius: 2rem;
   color: #1A5F2F;
   background-color: #ffffff;
   width: auto;
@@ -120,7 +124,7 @@ header {
 
 .modal-content img {
   object-fit: cover;
-  height: 45%;
+  height: 70%;
   width: 100%;
   border: 0;
 }
